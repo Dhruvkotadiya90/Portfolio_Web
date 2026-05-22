@@ -1,29 +1,38 @@
 export default function Projects() {
   const projects = [
-
-    { title: "Blood Donation App", desc: "A simple blood donation android application allows user to register and inquire for relevant blood groups and provides donor contacts." },
-
-    { title: "Stock Price Prediction Using ML", desc: "Built a machine learning model to predict stock prices using historical market data and data preprocessing techniques." }
+    {
+      title: "Blood Donation App",
+      desc: "A simple blood donation android application allows user to register and inquire for relevant blood groups and provides donor contacts.",
+      link: "https://github.com/Dhruvkotadiya90/Blood-Donation"
+    },
+    {
+      title: "Stock Price Prediction Using ML",
+      desc: "Built a machine learning model to predict stock prices using historical market data and data preprocessing techniques.",
+      link: "https://github.com/Dhruvkotadiya90/Stock-Price-Prediction-Using-ML"
+    }
   ];
 
   return (
-    <section id="projects" class="projects-section">
-  <h2 class="section-title">My Projects</h2>
+    <section id="projects" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-black to-slate-900 text-white px-6 fade-in">
+      <h2 className="text-4xl md:text-5xl font-bold mb-12">Projects</h2>
 
-  <div class="projects-container">
-
-    <div class="project-card" onclick="openProject('https://github.com/yourusername/blood-donation-app')">
-      <h3>Blood Donation App</h3>
-      <p>A Java-based platform to connect donors and recipients efficiently.</p>
-    </div>
-
-
-    <div class="project-card" onclick="openProject('https://github.com/yourusername/stock-price-prediction')">
-      <h3>Stock Price Prediction</h3>
-      <p>Machine learning model to predict stock trends using historical data.</p>
-    </div>
-
-  </div>
-</section>
+      <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
+        {projects.map((p, i) => (
+          <a
+            key={i}
+            href={p.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-slate-800 p-6 rounded-2xl hover:scale-105 hover:bg-slate-700 transition-all duration-300 cursor-pointer block"
+          >
+            <h3 className="text-2xl mb-2">{p.title}</h3>
+            <p className="text-slate-400 mb-4">{p.desc}</p>
+            <span className="text-sm text-blue-400 mt-4 opacity-70 group-hover:opacity-100">
+              Click for code →
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
   );
 }

@@ -27,9 +27,9 @@ export default function Hero() {
   }, [charIndex, textIndex]);
 
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-slate-900 via-black to-slate-800 text-white px-6 overflow-hidden fade-in">
-      <div className="absolute w-72 h-72 bg-sky-500 opacity-20 rounded-full blur-3xl top-10 left-10"></div>
-      <div className="absolute w-72 h-72 bg-purple-500 opacity-20 rounded-full blur-3xl bottom-10 right-10"></div>
+    <section id="home" className="relative min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-slate-900 via-black to-slate-800 text-white px-6 overflow-hidden fade-in">
+      <div className="absolute w-72 h-72 bg-blue-600 opacity-20 rounded-full blur-3xl top-10 left-10"></div>
+      <div className="absolute w-72 h-72 bg-red-600 opacity-20 rounded-full blur-3xl bottom-10 right-10"></div>
 
       <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
         Hi, I'm <span className="text-sky-400">Dhruv</span>

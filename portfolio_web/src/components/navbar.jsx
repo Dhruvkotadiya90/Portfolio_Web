@@ -20,11 +20,11 @@ export default function Navbar() {
     sections.forEach((section) => observer.observe(section));
   }, []);
 
-  const navItems = ["about", "projects", "skills", "contact"];
+  const navItems = ["home","about", "projects", "skills", "contact"];
 
   return (
     <nav className="fixed top-0 left-0 w-full flex justify-center py-4 bg-black/30 backdrop-blur z-50">
-      <div className="flex gap-6 text-white">
+      <div className="flex gap-20 text-white">
         {navItems.map((item) => (
           <a
             key={item}

@@ -1,21 +1,29 @@
 export default function Projects() {
   const projects = [
-    { title: "Blood Donation App", desc: "Matches donors" },
-    { title: "Home Renting App", desc: "Property listing platform" }
+
+    { title: "Blood Donation App", desc: "A simple blood donation android application allows user to register and inquire for relevant blood groups and provides donor contacts." },
+
+    { title: "Stock Price Prediction Using ML", desc: "Built a machine learning model to predict stock prices using historical market data and data preprocessing techniques." }
   ];
 
   return (
-    <section id="projects" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-black to-slate-900 text-white px-6 fade-in">
-      <h2 className="text-4xl md:text-5xl font-bold mb-12">Projects</h2>
+    <section id="projects" class="projects-section">
+  <h2 class="section-title">My Projects</h2>
 
-      <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
-        {projects.map((p, i) => (
-          <div key={i} className="bg-slate-800 p-6 rounded-2xl hover:scale-105 transition-all duration-300">
-            <h3 className="text-2xl mb-2">{p.title}</h3>
-            <p className="text-slate-400 mb-4">{p.desc}</p>
-          </div>
-        ))}
-      </div>
-    </section>
+  <div class="projects-container">
+
+    <div class="project-card" onclick="openProject('https://github.com/yourusername/blood-donation-app')">
+      <h3>Blood Donation App</h3>
+      <p>A Java-based platform to connect donors and recipients efficiently.</p>
+    </div>
+
+
+    <div class="project-card" onclick="openProject('https://github.com/yourusername/stock-price-prediction')">
+      <h3>Stock Price Prediction</h3>
+      <p>Machine learning model to predict stock trends using historical data.</p>
+    </div>
+
+  </div>
+</section>
   );
 }

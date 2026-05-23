@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const texts = [
-    "Java + Spring Boot Enthusiast",
-  ];
+  
 
   const [displayText, setDisplayText] = useState("");
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
 
   useEffect(() => {
+
+    const texts = [
+      "Java + Spring Boot Enthusiast",
+    ];
+
     const typing = setTimeout(() => {
       if (charIndex < texts[textIndex].length) {
         setDisplayText((prev) => prev + texts[textIndex][charIndex]);

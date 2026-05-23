@@ -48,6 +48,15 @@ export default function Contact() {
     <span>LinkedIn</span>
   </a>
 
+  {/* Resume Download Button */}
+  <a
+          href="/Dhruv(Resume).pdf"
+          download="Dhruv(Resume).pdf"
+          className="bg-lime-400 text-black px-6 py-3 rounded-xl hover:scale-105 transition-all duration-300 shadow-lg text-center"
+        >
+          Download Resume
+        </a>
+
 </div>
 
     </section>

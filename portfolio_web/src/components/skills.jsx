@@ -1,31 +1,31 @@
 export default function Experience() {
-  const experience = [
+  const internship = [
     {
-      title: "Java Developer Intern – XYZ Company",
-      duration: "Jan 2025 – Mar 2025",
-      desc: "Worked on backend development using Java and contributed to real-world features.",
-      link: "https://www.linkedin.com/company/xyz", // 🔥 add your link
+      title: "Android Developer Intern at Stypix Ahmedabad",
+      duration: "June 2024 – July 2024",
+      desc: "Designed and developed basic Android UI layouts using XML.\n Implemented simple application features and activity lifecycle handling. \n Performed activity navigation to enhance user flow within the application. \n Gained hands-on experience with Android Studio and app structure.",
+      link: "https://www.linkedin.com/company/stypixahmd/", // 🔥 add your link
     },
     {
-      title: "Academic Projects",
-      duration: "2024 – Present",
-      desc: "Built multiple applications including a blood donation system and home renting platform.",
-      link: "https://www.linkedin.com/", // optional or remove
+      title: "Android Developer Intern at BrainyBeam Infotech Ahmedabad",
+      duration: "May 2025 – June 2025",
+      desc: "Managed smooth navigation and data flow between different application activities. \n Integrated MySQL database with application frontend for data storage and retrieval. \n Implemented basic CRUD operations using MySQL and Java. \n Worked with core Java concepts to handle application logic and data processing.",
+      link: "https://www.linkedin.com/company/brainybeam-technologies-pvt-ltd/", // optional or remove
     },
   ];
 
   return (
     <section
-      id="experience"
+      id="internships"
       className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-black to-slate-900 text-white px-6 fade-in"
     >
       <h2 className="text-4xl md:text-5xl font-bold mb-12">
-        Experience
+        Internships
       </h2>
 
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
 
-        {experience.map((item, i) => (
+        {internship.map((item, i) => (
           <a
             key={i}
             href={item.link}

@@ -22,7 +22,7 @@ export default function Navbar() {
     sections.forEach((section) => observer.observe(section));
   }, []);
 
-  const navItems = ["home", "about", "projects", "skills", "contact"];
+  const navItems = ["home", "about", "projects", "internships", "contact"];
 
   return (
     <nav className="fixed top-0 left-0 w-full flex justify-between items-center px-6 py-4 bg-black/30 backdrop-blur z-50 text-white">

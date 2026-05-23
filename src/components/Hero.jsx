@@ -24,7 +24,7 @@ export default function Hero() {
     }, 60);
 
     return () => clearTimeout(typing);
-  }, [charIndex, textIndex]);
+  }, [charIndex, textIndex, texts]);
 
   return (
     <section id="home" className="relative min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-slate-900 via-black to-slate-800 text-white px-6 overflow-hidden fade-in">

@@ -32,7 +32,7 @@ export default function Hero() {
       <div className="absolute w-72 h-72 bg-red-600 opacity-20 rounded-full blur-3xl bottom-10 right-10"></div>
 
       <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
-        Hi, I'm <span className="text-sky-400">Dhruv</span>
+        Hi, I'm <span className="text-sky-400">Dhruv</span>!
       </h1>
 
       <p className="text-lg md:text-2xl text-slate-300 mb-6 h-8">

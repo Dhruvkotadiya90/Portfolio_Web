@@ -23,7 +23,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-black to-slate-900 text-white px-6 fade-in">
+    <section id="projects" className="p-12 flex flex-col justify-center items-center bg-gradient-to-br from-black to-slate-900 text-white px-6 fade-in">
       <h2 className="text-4xl md:text-5xl font-bold mb-12 text-blue-400">Projects</h2>
 
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl">

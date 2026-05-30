@@ -10,7 +10,7 @@ export default function Hero() {
   useEffect(() => {
 
     const texts = [
-      "Java + Spring Boot Enthusiast",
+      "Java + Spring Boot Enthusiast...",
     ];
 
     const typing = setTimeout(() => {
@@ -35,7 +35,7 @@ export default function Hero() {
       <div className="absolute w-72 h-72 bg-red-600 opacity-20 rounded-full blur-3xl bottom-10 right-10"></div>
 
       <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
-        Hi, I'm <span className="text-sky-400">Dhruv</span>!
+        Hi, I'm <span className="text-sky-400">Dhruv!</span>
       </h1>
 
       <p className="text-lg md:text-2xl text-slate-300 mb-6 h-8">
@@ -47,7 +47,7 @@ export default function Hero() {
         <button onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })} className="bg-sky-400 text-black px-6 py-2 rounded-xl hover:scale-105 transition-all duration-300">
           Projects
         </button>
-        <button onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })} className="border border-white px-6 py-2 rounded-xl hover:bg-white hover:text-black transition-all duration-300">
+        <button onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })} className="border border-white px-6 py-2 rounded-xl hover:bg-white hover:text-black hover:scale-105 transition-all duration-300">
           Contact
         </button>
       </div>

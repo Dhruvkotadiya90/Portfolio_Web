@@ -28,7 +28,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full flex justify-between items-center px-6 py-4 bg-black/30 backdrop-blur z-50 text-white">
       
       {/* Logo */}
-      <h1 className="text-xl font-bold">Portfolio | Dhruv</h1>
+      <h1 className="text-xl font-bold text-blue-400">Portfolio | Dhruv</h1>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex gap-10">

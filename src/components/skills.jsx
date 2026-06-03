@@ -17,7 +17,7 @@ export default function Experience() {
   return (
     <section
       id="internships"
-      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-black to-slate-900 text-white px-6 fade-in"
+      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-black to-slate-900 text-white p-6 fade-in"
     >
       <h2 className="text-4xl md:text-5xl font-bold mb-12 text-blue-400">
         Internships

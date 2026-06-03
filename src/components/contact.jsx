@@ -1,7 +1,12 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa6";
+import { useState } from "react";
+import Suggestion from "./Suggestion";
 
 export default function Contact() {
+
+  const [open, setOpen] = useState(false);
+
   return (
     <section
       id="contact"
@@ -17,39 +22,39 @@ export default function Contact() {
 
       <div className="flex flex-row flex-wrap justify-center items-center gap-6 mt-6">
 
-  {/* Email */}
-  <a
-    href="mailto:dhruvkotadiya90@zohomail.in"
-    className="flex items-center gap-3 bg-red-600 px-6 py-3 rounded-xl hover:bg-red-500 hover:scale-105 transition-all duration-300"
-  >
-    <FaEnvelope size={20} />
-    <span>Email</span>
-  </a>
+        {/* Email */}
+        <a
+          href="mailto:dhruvkotadiya90@zohomail.in"
+          className="flex items-center gap-3 bg-red-600 px-6 py-3 rounded-xl hover:bg-red-500 hover:scale-105 transition-all duration-300"
+        >
+          <FaEnvelope size={20} />
+          <span>Email</span>
+        </a>
 
-  {/* GitHub */}
-  <a
-    href="https://github.com/Dhruvkotadiya90"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-3 bg-slate-800 px-6 py-3 rounded-xl hover:bg-slate-700 hover:scale-105 transition-all duration-300"
-  >
-    <FaGithub size={20} />
-    <span>GitHub</span>
-  </a>
+        {/* GitHub */}
+        <a
+          href="https://github.com/Dhruvkotadiya90"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 bg-slate-800 px-6 py-3 rounded-xl hover:bg-slate-700 hover:scale-105 transition-all duration-300"
+        >
+          <FaGithub size={20} />
+          <span>GitHub</span>
+        </a>
 
-  {/* LinkedIn */}
-  <a
-    href="https://www.linkedin.com/in/dhruv-kotadiya-8b843b2b3"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-3 bg-blue-600 px-6 py-3 rounded-xl hover:bg-blue-500 hover:scale-105 transition-all duration-300"
-  >
-    <FaLinkedin size={20} />
-    <span>LinkedIn</span>
-  </a>
+        {/* LinkedIn */}
+        <a
+          href="https://www.linkedin.com/in/dhruv-kotadiya-8b843b2b3"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 bg-blue-600 px-6 py-3 rounded-xl hover:bg-blue-500 hover:scale-105 transition-all duration-300"
+        >
+          <FaLinkedin size={20} />
+          <span>LinkedIn</span>
+        </a>
 
-  {/* Resume Download Button */}
-  <a
+        {/* Resume Download Button */}
+        <a
           href="/Dhruv(Resume).pdf"
           download="Dhruv(Resume).pdf"
           className="bg-lime-400 text-black px-6 py-3 rounded-xl hover:scale-105 transition-all duration-300 shadow-lg text-center"
@@ -57,7 +62,15 @@ export default function Contact() {
           Download Resume
         </a>
 
-</div>
+        <section>
+          <button className="suggestion-btn" onClick={() => setOpen(true)}>
+            Give Suggestion💡
+          </button>
+
+          {open && <Suggestion onClose={() => setOpen(false)} />}
+        </section>
+
+      </div>
 
     </section>
   );
